@@ -1,10 +1,70 @@
 
-.bod {
+li{
+    width: 250px;
+    1padding: 50px;
+    margin-bottom: 20px;
 
-box-sizing: border-box;
+}
+/* 
+.item:first-child {
+    background-color: aqua;
+} */
+
+.item:not(:nth-child(n+3)) {
+    background-color: blueviolet;
+
+}
+/* 
+.item:last-child {
+    background-color: blueviolet;
+} */
+
+/* .item-two {
+
+    background-color: blueviolet; */
+}
+
+body {
+
+
+
+}
+
+h1,h1,h3,h4, p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.container {
+width: 1200px;
+padding-left: 15px;
+padding-right: 15px;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+
+button {
+    min-width: 160px ;
+    padding: 16px 20px ;
+    border: 1px solid red;
+    background-color: transparent;
+    border-radius: 16px;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(233, 235, 111);
+}
+
+/* box-sizing: border-box;
     
     width: 200px;
     height: 200px;
+    margin: 30px;
     background-color: aqua;
     padding: 18px; 
     border: 10px solid rgb(204, 157, 157)  
@@ -12,4 +72,32 @@ box-sizing: border-box;
 
 }
 
+.bod1 {
 
+    box-sizing: border-box;
+        
+        width: 200px;
+        height: 200px;
+        margin: 50px;
+        background-color: aqua;
+        padding: 18px; 
+        border: 10px solid rgb(204, 157, 157)  
+        
+    
+    }
+
+a
+{
+    display: block;
+    padding: 20px;
+border: 5px solid aqua;
+}
+
+
+button 
+{
+    display: block;
+    padding: 20px, 0px; 
+    border-radius: 50 ;
+}
+ */
