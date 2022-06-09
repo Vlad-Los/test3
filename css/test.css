@@ -1,36 +1,136 @@
-
-li{
-    width: 250px;
-    1padding: 50px;
-    margin-bottom: 20px;
-
-}
-/* 
-.item:first-child {
-    background-color: aqua;
-} */
-
-.item:not(:nth-child(n+3)) {
-    background-color: blueviolet;
-
-}
-/* 
-.item:last-child {
-    background-color: blueviolet;
-} */
-
-/* .item-two {
-
-    background-color: blueviolet; */
-}
-
 body {
+    font-family: "Open Sans", sans-serif;
+    background-image: url(../images/pattern-background.png);
+}
+.box {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1600px;
+    height: 1600px;
+
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 40px; 
+    background-color: #607d8b;
+
+    border: 20px dashed #212121;
+    border-radius: 10px;
+
+    /* background-image: url(https://w7.pngwing.com/pngs/754/627/png-transparent-computer-icons-font-awesome-icon-design-localizacao-black-map-location-thumbnail.png),
+    url(https://w7.pngwing.com/pngs/165/138/png-transparent-computer-icons-check-mark-checkbox-circle-mark-angle-text-share-icon.png),
+    url(../images/unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: top right, bottom left;
+    background-size: 300px 300px; */
+
+    background-image: linear-gradient(to bottom, rgba(55, 59, 68, 0.8), rgba(55, 59, 68, 0.8)),
+    url(../images/unsplash.jpg);
+}
+
+.inner-box {
+    position: relative;
+
+    padding: 10px;
+    width: 350px;
+    height: 350px;
+
+    background-color: #212121;
+    border-radius: 10px;
+
+    color: azure;
+    font-size: 30px;
+    line-height: 1.5;
+
+    box-shadow: 2.8px 2.8px 2.2px rgba(255, 255, 255, 0.02), 6.7px 6.7px 5.3px rgba(255, 255, 255, 0.028),
+    12.5px 12.5px 10px rgba(255, 255, 255, 0.035), 22.3px 22.3px 17.9px rgba(255, 255, 255, 0.042),
+    41.8px 41.8px 33.4px rgba(255, 255, 255, 0.05), 100px 100px 80px rgba(255, 255, 255, 0.07);
+}
+
+.inner-box::before {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%) rotate(-45deg);
+    display: block;
+    width: 100%;
+    height: 100px;
+    content: "";
+    background-color: blueviolet;
+}
+.inner-box::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    content: "";
+    background-color: tomato;
+}
+
+.inner-box:hover::after {
+    background-color: white;
+}
 
 
+
+
+
+
+/* Моя версия */
+/* 
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.box {
+
+    width: 800px;
+    height: 400px;
+    outline: 2px dashed black;
+}
+
+.item {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+
+    font-size: 40px;
+    text-align: center;
+    line-height: 100px;
+    color: azure;
+}
+
+.first-item {
+
+    background-color: #06aed5;
+flex-grow: 1;
+}
+
+.second-item {
+    background-color: blue;
 
 }
 
-h1,h1,h3,h4, p{
+.third-item {
+    background-color: darkorange;
+}
+
+.fourth-item {
+    background-color: crimson;
+} */
+
+/* конец моей версии */
+
+/* h1,h1,h3,h4, p{
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -41,10 +141,10 @@ padding-right: 15px;
 margin-left: auto;
 margin-right: auto;
 
-}
+} */
 
 
-button {
+/* button {
     min-width: 160px ;
     padding: 16px 20px ;
     border: 1px solid red;
@@ -57,8 +157,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(233, 235, 111);
-}
+    background-color: rgb(233, 235, 111); */
+/
 
 /* box-sizing: border-box;
     
@@ -101,3 +201,28 @@ button
     border-radius: 50 ;
 }
  */
+
+/* li{
+    width: 250px;
+    1padding: 50px;
+    margin-bottom: 20px;
+
+}
+/* 
+.item:first-child {
+    background-color: aqua;
+} */
+/* 
+.item:not(:nth-child(n+3)) {
+    background-color: blueviolet;
+
+} */
+/* 
+.item:last-child {
+    background-color: blueviolet;
+} */
+
+/* .item-two {
+
+    background-color: blueviolet; */
+}
